@@ -50,7 +50,7 @@ export default function Dashboard({ orders }: HomeProps) {
 
     const [orderList, setOrderList] = useState(orders || [])
     
-    const [modalItem, setModaItem] = useState<OrderItemProps[]>()
+    const [modalItem, setModaItem] = useState<OrderItemProps[]>([])
     const [modalVisible, setModalVisible] = useState(false) 
 
 
