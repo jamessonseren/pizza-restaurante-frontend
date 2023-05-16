@@ -1,0 +1,57 @@
+.containerCenter{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--gray-900);
+
+    .logo{
+        height: 15rem;
+    }
+
+  
+}
+
+.login{
+    margin-top: 1rem;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    
+    
+    form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form button{
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    h1{
+        color: var(--white);
+        padding-bottom: 2rem;
+    }
+    
+}
+
+.text{
+    margin-top: 1rem;
+    color: var(--white);
+    cursor: pointer;
+}
+.text:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:620px){
+    .login, .logo{
+        width: 90%;
+    }
+    
+}

@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    padding: 2%;
+
+    a{
+        margin-bottom: 2rem;
+    }
+    h1{
+        color: #FFF;
+        margin-bottom: 2rem;
+    }
+
+}
+.logo{
+    height: 15rem;
+}
+
+.form{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-700);
+}
+.submitMessage{
+    margin-top: 15px;
+    font-size: 2rem;
+}
