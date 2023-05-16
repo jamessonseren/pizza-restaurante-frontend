@@ -24,7 +24,8 @@
 
 }
 .logo{
-    height: 15rem;
+    width: auto;
+    max-height: 15rem;
 }
 
 .form{
@@ -39,4 +40,17 @@
 .submitMessage{
     margin-top: 15px;
     font-size: 2rem;
+}
+
+@media screen and (max-width:350px){
+    .logo{
+        width: 150px;
+        height: auto;
+    }
+
+    .box{
+        h1{
+            font-size: 1.2rem;
+        }
+    }
 }
