@@ -1,4 +1,5 @@
 [[redirects]]
-    from = "/*"
-    to = "/index.html"
-    status = 200
+  from = "/_next/static/*"
+  to = "/static/:splat"
+  status = 301
+  force = true
