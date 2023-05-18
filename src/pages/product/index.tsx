@@ -60,15 +60,19 @@ export default function Product({ categoryList }: categoryProps) {
         try {
             const data = new FormData()
 
-            if (name === '' || price === '' || description === '' || imageAvatar === null) {
+            if (name === '' || price === '' || description === '') {
                 toast.error('Please, complete all fields')
                 return
             }
             data.append('name', name)
             data.append('price', price)
             data.append('description', description)
-            data.append('file', imageAvatar)
             data.append('category_id', categories[categorySelected].id)
+
+            if(imageAvatar !== null){
+                data.append('file', imageAvatar)
+
+            }
 
             const apiClient = setupAPIClient()
 
@@ -79,6 +83,7 @@ export default function Product({ categoryList }: categoryProps) {
 
         } catch (err) {
             toast.error('Product register failed')
+            console.log(err)
         }
         setName('')
         setPrice('')
