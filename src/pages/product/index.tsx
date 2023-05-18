@@ -110,7 +110,7 @@ export default function Product({ categoryList }: categoryProps) {
 
                     <form className={styles.form} onSubmit={handleRegisterProduct}>
 
-                        <label className={styles.addAvatar}>
+                        {/* <label className={styles.addAvatar}>
                             <span>
                                 <FiUpload size={25} color="#FFF" />
                             </span>
@@ -126,7 +126,7 @@ export default function Product({ categoryList }: categoryProps) {
                                     height={250}
                                 />
                             )}
-                        </label>
+                        </label> */}
 
                         <select value={categorySelected} onChange={handleChangeCategory}>
                             {categories.map((item, index) => {
